@@ -1,38 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
    <head>
-      <!-- basic -->
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <!-- mobile metas -->
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <!-- site metas -->
       <title>TripleWed</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
-      <!-- bootstrap css -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <!-- style css -->
-      <link rel="stylesheet" href="css/style.css">
-      <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
-      <!-- fevicon -->
+      <link rel="stylesheet" href="/Proyecto 5°7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="/Proyecto 5°7/css/style.css">
+      <link rel="stylesheet" href="/Proyecto 5°7/css/notas.css">
+      <link rel="stylesheet" href="/Proyecto 5°7/css/responsive.css">
+      <link rel="shortcun icon" href="./favicon_io/favicon-16x16.png" type="image/x-icon">
       <link rel="icon" href="images/fevicon.png" type="image/gif" />
-      <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
    </head>
    <!-- body -->
    <body class="main-layout inner_page">
-      <!-- loader  -->
-      <div class="loader_bg">
-         <div class="loader"><img src="images/loading.gif" alt="#"/></div>
-      </div>
-      <!-- end loader -->
       <!-- header -->
       <div class="header">
          <div class="container-fluid">
@@ -53,20 +39,20 @@
                      </button>
                      <div class="collapse navbar-collapse" id="navbarsExample04">
                         <ul class="navbar-nav mr-auto">
-                           <li class="nav-item">
+                           <li class="nav-item active">
                               <a class="nav-link" href="index.html">Home</a>
                            </li>
                            <li class="nav-item">
-                              <a class="nav-link" href="about.html">About</a>
+                              <a class="nav-link" href="#">Musica</a>
                            </li>
                            <li class="nav-item">
-                              <a class="nav-link" href="calculadora.html">calculadora</a>
-                           </li>
-                           <li class="nav-item active">
-                              <a class="nav-link" href="shop.html">shop</a>
+                              <a class="nav-link" href="calculadora.html">Calculadora</a>
                            </li>
                            <li class="nav-item">
-                              <a class="nav-link" href="contact.html">Contact Us</a>
+                              <a class="nav-link" href="shop.html">Notas</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="contact.html">Quienes Somos</a>
                            </li>
                         </ul>
                      </div>
@@ -81,32 +67,26 @@
             </div>
          </div>
       </div>
-      <!-- end header inner -->
-      <!-- shop -->
-      <div class="shop">
-         <div class="container-fluid">
-            <div class="row d_flex d_grid">
-               <div class="col-md-7">
-                  <div class="shop_img text_align_center" data-aos="fade-right">
-                     <figure><img class="img_responsive" src="images/shop.png" alt="#"/></figure>
-                  </div>
-               </div>
-               <div class="col-md-5 order_1_mobile">
-                  <div class="titlepage text_align_left ">
-                     <h2>Our  Skate <br>Shop</h2>
-                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variatioThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variationsns
-                     </p>
-                     <a class="read_more" href="shop.html">Buy Now</a>
-                  </div>
-               </div>
-            </div>
+      <div class="notes" id="app">
+         <div class="notes__sidebar">
+             <button class="notes__add" type="button">Añadir Nota</button>
+             <div class="notes__list">
+                 <div class="notes__list-item notes__list-item--selected">
+                     <div class="notes__small-title">Lecture Notes</div>
+                     <div class="notes__small-body">I learnt nothing today.</div>
+                     <div class="notes__small-updated">Thursday 3:30pm</div>
+                 </div>
+             </div>
          </div>
-      </div>
-      <!-- end shop -->
-      <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
+         <div class="notes__preview">
+             <input class="notes__title" type="text" placeholder="Enter a title...">
+             <textarea class="notes__body">I am the notes body...</textarea>
+         </div>
+     </div>
+      <script src="/Proyecto 5°7/js/js/main.js" type="module"></script>
+      <script src="/Proyecto 5°7/js/jquery.min.js"></script>
+      <script src="/Proyecto 5°7/js/bootstrap.bundle.min.js"></script>
+      <script src="/Proyecto 5°7/js/jquery-3.0.0.min.js"></script>
       <!-- sidebar -->
       <script src="js/custom.js"></script>
       <script>
